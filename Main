@@ -1,6 +1,8 @@
-num = int(input('Введите число от 0 до 10'))
-while num < 1 and num > 9:
-    print('Incorrect')
-    num = int(input('Введите число от 0 до 10'))
+message_1 = 'Введите число от 0 до 10. Результат я возведу во 2 степень и выведу на экран!'
+message_2 = 'Число должно быть больше ноля, но меньше 10. Попробуй снова!'
+num = int(input(message_1))
+while num < 1 or num > 9:
+    print('Неверно')
+    num = int(input(message_2))
 else:
-    print('Correct')
+    print(num**2)
