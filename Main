@@ -5,4 +5,4 @@ while num < 1 or num > 9:
     print('Неверно')
     num = int(input(message_2))
 else:
-    print(num**2)
+    print(num ** 2)
