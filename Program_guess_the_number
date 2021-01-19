@@ -7,12 +7,12 @@ answer = (input('Your number more or less: '))
 while answer != '=':
     print('Incorrect')
     if answer == '<':
-        j = num
+        j = num - 1
         num = random.randint(i, j)
         print(num)
         answer = (input('Your number more or less: '))
     else:
-        i = num
+        i = num + 1
         num = random.randint(i, j)
         print(f'I think the answer is: {num}')
         answer = (input('Your number more or less: '))
