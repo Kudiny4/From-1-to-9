@@ -9,7 +9,7 @@ while answer != '=':
     if answer == '<':
         j = num - 1
         num = random.randint(i, j)
-        print(num)
+        print(f'I think the answer is: {num}')
         answer = (input('Your number more or less: '))
     else:
         i = num + 1
