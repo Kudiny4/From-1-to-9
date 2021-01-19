@@ -1,0 +1,20 @@
+import random
+i = 1
+j = 100
+num = random.randint(i, j)
+print(f'I think the answer is: {num}')
+answer = (input('Your number more or less: '))
+while answer != '=':
+    print('Incorrect')
+    if answer == '<':
+        j = num
+        num = random.randint(i, j)
+        print(num)
+        answer = (input('Your number more or less: '))
+    else:
+        i = num
+        num = random.randint(i, j)
+        print(f'I think the answer is: {num}')
+        answer = (input('Your number more or less: '))
+else:
+    print('Bingo! I new it!')
